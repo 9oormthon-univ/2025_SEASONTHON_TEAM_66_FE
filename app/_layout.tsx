@@ -1,3 +1,4 @@
+// app/_layout.tsx
 import { useColorScheme } from "@/hooks/useColorScheme";
 import { DarkTheme, DefaultTheme, ThemeProvider } from "@react-navigation/native";
 import { useFonts } from "expo-font";
@@ -14,11 +15,14 @@ export default function RootLayout() {
 
   return (
     <ThemeProvider value={colorScheme === "dark" ? DarkTheme : DefaultTheme}>
-      <Stack initialRouteName="index" screenOptions={{ headerShown: false }}>
-        <Stack.Screen name="index" />        {/* 👈 Welcome */}
-        <Stack.Screen name="onboarding" />   {/* 👈 온보딩 */}
-        <Stack.Screen name="(tabs)" />       {/* 👈 탭 그룹 */}
-        <Stack.Screen name="+not-found" />
+      <Stack screenOptions={{ headerShown: false }}>
+        {/* index = 스플래시 */}
+        <Stack.Screen name="index" />
+        <Stack.Screen name="welcome" />
+        <Stack.Screen name="auth" />
+        <Stack.Screen name="onboarding" />
+        <Stack.Screen name="(tabs)" />
+        <Stack.Screen name="+not-found" options={{ headerShown: false }} />
       </Stack>
       <StatusBar style="auto" />
     </ThemeProvider>
