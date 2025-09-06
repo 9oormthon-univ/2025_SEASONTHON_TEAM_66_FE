@@ -233,32 +233,7 @@ function Home() {
         )}
       </section>
 
-      {/* Info strip */}
-      <section className="strip">
-        <div className="strip-inner">
-          <div className="strip-item">
-            <div className="ico">🧩</div>
-            <div className="txt">
-              <strong>단계형 UI</strong>
-              <span>한 화면에 몰지 않고 버튼 따라 진입</span>
-            </div>
-          </div>
-          <div className="strip-item">
-            <div className="ico">🔐</div>
-            <div className="txt">
-              <strong>JWT 보안</strong>
-              <span>민감 정보는 로그인 후 이용</span>
-            </div>
-          </div>
-          <div className="strip-item">
-            <div className="ico">✍️</div>
-            <div className="txt">
-              <strong>후기/평점</strong>
-              <span>실제 경험을 공유하고 확인</span>
-            </div>
-          </div>
-        </div>
-      </section>
+    
     </Shell>
   );
 }
