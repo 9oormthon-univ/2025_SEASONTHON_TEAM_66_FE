@@ -49,7 +49,7 @@ export default function Home() {
         {/* 우측 두 카드 */}
         <View style={{ flex: 1, gap: 12 }}>
           <Card label="주·야간보호" color="#22c55e" onPress={() => router.push("/search")} />
-          <Card label="요양원" color="#a78bfa" onPress={() => router.push("/search")} />
+          <Card label="요양원/요양병원" color="#a78bfa" onPress={() => router.push("/search")} />
         </View>
       </View>
 
